@@ -5,17 +5,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" /> -->
 		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fullpage.min.css">
 	</head>
 	<body>
     <div id="fullpage">
-      <div class="section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <img class="img-fluid" src="./assets/imgs/svgs/blinq-white-logo.svg" alt="">
+      <div id="landing-top" class="section">
+        <div class="container-fluid px-md-5 absolute">
+          <div class="row ">
+            <div class="text-div px-0 col-md-8 col-lg-7 col-xl-6 text-center text-md-left">
+              <div class="title">
+                <!-- <h1 class="def-black font-weight-bold">Buying <br> land assets.</h1> -->
+                <img src="./assets/imgs/svgs/blinq-white-logo.svg" alt="">
+                <p class=" green-txt-2 font-weight-bold">Simplified.</p>
+              </div>
+              <img class="social-svg" src="./assets/imgs/svgs/triangle.svg" alt="">
+              <p class="my-4 font-weight-normal" style="font-size: 130%;">
+                Faster. Cheaper. More secure</p>
+              <div class="">
+                <a class="btn rounded-30 green-btn bg-da def-black py-3 px-5 mr-md-4 mb-3" href="./register.html" role="button">
+                  Make an order
+                <img class="social-svg" src="./assets/imgs/svgs/right-arrow.svg" alt="">
+                </a>
+                <a class="btn rounded-30 bg-white trans-btn def-border def-black py-3 px-5 mb-3" href="./register.html" role="button">
+                  Food Menu
+                <img class="social-svg" src="./assets/imgs/svgs/right-arrow-2.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class=" px-0 img-div  " style="right: 0; border-radius: 509px;" >
+              <!-- <img src="./assets/imgs/african-salad-abacha-recipe-main-photo.jpg" alt="" class=" " style="border-radius: 50%; height: 400px;width: 400px;"> -->
             </div>
           </div>
         </div>
@@ -24,10 +45,22 @@
       <div class="section">Some section</div>
       <div class="section">Some section</div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/fullpage.min.js"></script>
     <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#11CE78', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+        sectionsColor: ['#11CE78', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['page1', 'page2', 'page3', 'page4'],
+        navigationTooltips: ['Overview', 'Food menu', 'Easy', 'Touch'],
+        css3: true,
+        scrollingSpeed: 1000,
+        navigation: true,
+        slidesNavigation: true,
+        responsiveHeight: 330,
+        dragAndMove: true,
+        dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+        controlArrows: false
+
       });
     </script>
     <!-- <script src="./assets/js/main.js"></script> -->
